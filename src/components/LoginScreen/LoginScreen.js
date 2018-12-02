@@ -82,6 +82,8 @@ export default class LoginScreen extends Component {
         })
 
         const { email, password } = this.state;
+        const _email = email;
+        const _password = password;
 
         // check for empty feilds
         if (email.length == 0 || password.length == 0) {
@@ -126,6 +128,16 @@ export default class LoginScreen extends Component {
                 })
                 .catch((error) => {
                     console.log(`error(firebase) ----> ${error.toString()}`)
+                    if (JSON.stringify(error).toLowerCase().includes('the password is invalid')) {
+                        this.setState({
+                            isLoading: false,
+                            email: _email,
+                            password: _password,
+                            authError: true,
+                            authErrorMessage: '*Password incorrect!'
+                        })
+                        return;
+                    }
                     this.setState({
                         isLoading: false, 
                         error: true, 
@@ -200,7 +212,9 @@ export default class LoginScreen extends Component {
                     const response = firebase.auth().currentUser;
                     console.log(`response ----> ${JSON.stringify(response)}`)
                     this.setState({
-                        isLoading: false
+                        isLoading: false, 
+                        authError: false, 
+                        error: false
                     })
                     return;
                 })
@@ -273,8 +287,12 @@ export default class LoginScreen extends Component {
                         <TouchableOpacity 
                             onPress={() => {
                                 this.setState({
-                                    isEmailLogin: true
+                                    isEmailLogin: true, 
+                                    isLogin: false, 
+                                    authError: false, 
+                                    error: false
                                 })
+                                return;
                             }}
                             style={styles.emailButton}>
                             <View style={styles.innerButton}>
@@ -288,8 +306,12 @@ export default class LoginScreen extends Component {
                         <TouchableOpacity 
                             onPress={() => {
                                 this.setState({
-                                    isLogin: false
+                                    isEmailLogin: false,
+                                    isLogin: false,
+                                    authError: false, 
+                                    error: false
                                 })
+                                return;
                             }}
                             style={styles.loginButton}>
                             <Text style={styles.loginButtonLable}>Sign Up for free!</Text>
@@ -315,8 +337,6 @@ export default class LoginScreen extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={styles.formContainer}>
-                        {/* <TextInput placeholder="email" autoCapitalize="none" keyboardType="email-address" style={styles.input}/>
-                        <TextInput placeholder="password" secureTextEntry={true} style={styles.input}/> */}
                         <View style={styles.inputContainer}>
                             <Icon name="md-person" style={styles.formIcons} />
                             <TextInput onChangeText={(text) => {
@@ -375,7 +395,8 @@ export default class LoginScreen extends Component {
                     <View style={styles.backButtonContainer}>
                         <TouchableOpacity onPress={() => {
                             this.setState({
-                                isEmailSignup: false
+                                isEmailLogin: false,
+                                isLogin: true
                             })
                         }}>
                             <Icon name="md-arrow-back" style={{fontSize: 34, marginLeft: 18, color: 'white'}}/>
@@ -386,26 +407,28 @@ export default class LoginScreen extends Component {
                         <TextInput placeholder="password" secureTextEntry={true} style={styles.input}/> */}
                         <View style={styles.inputContainer}>
                             <Icon name="md-person" style={styles.formIcons} />
-                            <TextInput onChangeText={(text) => {
-                                this.setState({
-                                    email: text
-                                });
-                            }} 
-                            style={styles.input} 
-                            placeholder="email" 
-                            keyboardType="email-address" 
-                            autoCapitalize="none"/>
+                            <TextInput 
+                                onChangeText={(text) => {
+                                    this.setState({
+                                        email: text
+                                    });
+                                }} 
+                                style={styles.input} 
+                                placeholder="email" 
+                                keyboardType="email-address" 
+                                autoCapitalize="none">{this.state.email}</TextInput>
                         </View>
                         <View style={styles.inputContainer}>
                             <Icon name="md-lock" style={styles.formIcons} />
-                            <TextInput onChangeText={(text) => {
-                                this.setState({
-                                    password: text
-                                });
-                            }} 
-                            style={styles.input} 
-                            placeholder="password" 
-                            secureTextEntry={true}/>
+                            <TextInput 
+                                onChangeText={(text) => {
+                                    this.setState({
+                                        password: text
+                                    });
+                                }} 
+                                style={styles.input} 
+                                placeholder="password" 
+                                secureTextEntry={true}>{this.state.password}</TextInput>
                         </View>
                         {this.state.authError ? <Text style={styles.authErrorText}>{this.state.authErrorMessage}</Text> : <View style={{height: 38}} />}
                         <TouchableOpacity 
