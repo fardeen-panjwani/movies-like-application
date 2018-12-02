@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "movies-like",
+    "description": "This project is really great.",
+    "slug": "movies-like",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "platforms": ["android", "ios"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/_splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+    	"bundleIdentifier": "com.movieslike"
+    },
+    "android": {
+      "package": "com.movieslike"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#4e4e4b"
+    }
+  }
+}

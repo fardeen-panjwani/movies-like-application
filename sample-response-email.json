@@ -1,0 +1,46 @@
+{"abc": {
+    "uid": "RudmXrX4l2Qkpxg4CAXIdEkKfP13",
+    "displayName": null,
+    "photoURL": null,
+    "email": "someone@gmail.com",
+    "emailVerified": false,
+    "phoneNumber": null,
+    "isAnonymous": false,
+    "providerData": [
+        {
+            "uid": "someone@gmail.com",
+            "displayName": null,
+            "photoURL": null,
+            "email": "someone@gmail.com",
+            "phoneNumber": null,
+            "providerId": "password"
+        }
+    ],
+    "apiKey": "AIzaSyCpmMfLV7O7SPJ0PgTIrO1piHuw-NzoQB0",
+    "appName": "[DEFAULT]",
+    "authDomain": "movies-like-e1584.firebaseapp.com",
+    "stsTokenManager": {
+        "apiKey": "AIzaSyCpmMfLV7O7SPJ0PgTIrO1piHuw-NzoQB0",
+        "refreshToken": "AGK09AO7BJGZ4TVMRwZmmiCXmTORROYdHYUatijH0Bm7unIVUJs3B6AWch4xs1iY45l0cclf_uHIONhQt-GJJ4aOx9uYDws0HUP6jjKPodynmirkEcNm0hlQ4g-8WBeiyr5Q60t455-7cN50iiw-Pw_kUqayFxLln9G4LUO_ZBf24d1JT5uHc6qEVv8XEwbfRYGGJODplklL7T9Oni_1jOmI9HmwdTGplw",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjIzNTBiNWY2NDM0Zjc2Y2NiM2IxMTlmZGQ4OGQxMzhjOWFjNTVmY2UiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbW92aWVzLWxpa2UtZTE1ODQiLCJhdWQiOiJtb3ZpZXMtbGlrZS1lMTU4NCIsImF1dGhfdGltZSI6MTU0MzY4NzIwMSwidXNlcl9pZCI6IlJ1ZG1Yclg0bDJRa3B4ZzRDQVhJZEVrS2ZQMTMiLCJzdWIiOiJSdWRtWHJYNGwyUWtweGc0Q0FYSWRFa0tmUDEzIiwiaWF0IjoxNTQzNjg3MjAxLCJleHAiOjE1NDM2OTA4MDEsImVtYWlsIjoic29tZW9uZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsic29tZW9uZUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.UW7a6LStpx8nX2NyJmEY-4rRoUpW-k-aES2nw67dswyXnmjsZEvpmcJt-YJJecDAReVz3zJG0gB5Vk4DIwlWAIeotQ-UEFWFj_HnJu6VdfvJkBh2eVHY0cOn1HI3amHgpFQ302ht8hoh5bZ23RIfRJYVMT2sGbowmUAa1CGOZ60HiSYoSM_sT7wrM7D1pHdHJL4z7-OpZGdl1JuZifhVExgiNT-8KmSIX_GweGjaVV4MjcpYVwQC7eVXtuB5vUZOB_cF4y_fsgLxl3rmrh9OuKWOFsYElvLS61guekl1GFclPAUyXtEkqddBWyIEuE9693NMrErbV_Zic1g2ssXf9g",
+        "expirationTime": 1543690802175
+    },
+    "redirectEventId": null,
+    "lastLoginAt": "1543687201000",
+    "createdAt": "1543687201000"
+},
+"def": {
+    "serverAuthCode": "4/pgA6D3sZaoVIKwDb_nkiO1xKlMEW_pF6AJGbQ2Brx93tNYi-0W6hc6KoSMawbqJK6VWPa-2AI_JfGEwr0Pri0ps",
+    "refreshToken": "1/EfSrGg-sFZ-F8udtQpgFMnD06QaLYu4tai0y0gLuSa0",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2M2ZlNDgwYzNjNTgzOWJiYjE1ODYxZTA4YzMyZDE4N2ZhZjlhNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4OTY4MTE5NzUwODItZG4xajFpbjNlbzNpcHNhYjY2NTRtZWptb20waDRxbTEuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4OTY4MTE5NzUwODItZG4xajFpbjNlbzNpcHNhYjY2NTRtZWptb20waDRxbTEuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMjQyMjc5MzY5NzMyNjg1MTkiLCJlbWFpbCI6InBhbmp3YW5pbm91cmVlbjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJtVnBXYUVLbkhZaXY2dExPVkVWSEpBIiwibmFtZSI6Ik5vdXJlZW4gUGFuandhbmkiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDUuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy0ycHJ6QUlOMGY4RS9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BR0Rndy1nOW9kQkVpeHlsZFpBRTFjSEgzSDlrNHFvU2V3L3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJOb3VyZWVuIiwiZmFtaWx5X25hbWUiOiJQYW5qd2FuaSIsImxvY2FsZSI6ImVuIiwiaWF0IjoxNTQzNjg3Mzg3LCJleHAiOjE1NDM2OTA5ODd9.EHTd9otMcHXgGpbk1vIbsT0sT7pb7O0ULFpzkSpJ1kuJzH-_M0dr3vjCVx_LBwztaHbcwCsHsCToyVq5wKnEaePTQ14UJNy7_GtcWcUTaVb-cbwPQm5Ns-oavwv5eaN6Slc2KHr1MscMsNxBrKBJdU4B5vJpoSJ8zSdenRMxpV2QRv8-7KZitNmRp5eVPbw4tlBLM5GVNNPH4d5BkNoelOLJte-Bnd_DMrLHxUDqhwVFrqesIVxe-NIzpLPa-wpsrHsg8ifO-Qj711ufZ9DT_zGYugSALPdBJsTxGXj4xtm7GpeEFrtv1AVx0BZHFD4bkoJfvA4q7BbiekIpHn4Oiw",
+    "accessToken": "ya29.GltlBriUnSzMz6QJV2LDd2tns07GmE_UpdzgQoZTv0Ek9GaqzANf_IUuBwcPsG5EqRGfI73-JUqWibAOb4JLMn8R6zjrlHd6JrwLj5ANy473h2k9AkRAM9AxYFyd",
+    "type": "success",
+    "user": {
+        "id": "111224227936973268519",
+        "name": "Noureen Panjwani",
+        "givenName": "Noureen",
+        "familyName": "Panjwani",
+        "photoUrl": "https://lh5.googleusercontent.com/-2przAIN0f8E/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-g9odBEixyldZAE1cHH3H9k4qoSew/mo/photo.jpg",
+        "email": "panjwaninoureen8@gmail.com"
+    }
+}}
